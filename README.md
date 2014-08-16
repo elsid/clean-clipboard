@@ -1,4 +1,171 @@
 clean-clipboard
 ===============
 
-Windows application to clean clipboard on timeout after pressing keyboard keys combination
+Windows application to clean clipboard on timeout after pressing keyboard keys combination.
+
+Requires:
+```
+CMake 2.6
+MinGW-g++ 4.8.2
+DInput
+```
+
+Build:
+```
+cmake -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles" CMakeLists.txt
+mingw-make
+```
+
+Usage:
+```
+clean-clipboard.exe <check keyboard timeout> <clean clipboard timeout> [ <key name> ... ]
+   <check keyboard timeout>    timeout between reading keyboard buttons state
+                               in miliseconds
+   <clean clipboard timeout>   clean cliboard timeout after detecting keyboard
+                               keys combination
+   <key name>                  key name from list:
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        A
+        ABNT_C1
+        ABNT_C2
+        ADD
+        APOSTROPHE
+        APPS
+        AT
+        AX
+        B
+        BACK
+        BACKSLASH
+        C
+        CALCULATOR
+        CAPITAL
+        CIRCUMFLEX
+        COLON
+        COMMA
+        CONVERT
+        D
+        DECIMAL
+        DELETE
+        DIVIDE
+        DOWN
+        E
+        END
+        EQUALS
+        ESCAPE
+        F
+        F1
+        F10
+        F11
+        F12
+        F13
+        F14
+        F15
+        F2
+        F3
+        F4
+        F5
+        F6
+        F7
+        F8
+        F9
+        G
+        GRAVE
+        H
+        HOME
+        I
+        INSERT
+        J
+        K
+        KANA
+        KANJI
+        L
+        LBRACKET
+        LCONTROL
+        LEFT
+        LMENU
+        LSHIFT
+        LWIN
+        M
+        MAIL
+        MEDIASELECT
+        MEDIASTOP
+        MINUS
+        MULTIPLY
+        MUTE
+        MYCOMPUTER
+        N
+        NEXT
+        NEXTTRACK
+        NOCONVERT
+        NUMLOCK
+        NUMPAD0
+        NUMPAD1
+        NUMPAD2
+        NUMPAD3
+        NUMPAD4
+        NUMPAD5
+        NUMPAD6
+        NUMPAD7
+        NUMPAD8
+        NUMPAD9
+        NUMPADCOMMA
+        NUMPADENTER
+        NUMPADEQUALS
+        O
+        OEM_102
+        P
+        PAUSE
+        PERIOD
+        PLAYPAUSE
+        POWER
+        PRIOR
+        Q
+        R
+        RBRACKET
+        RCONTROL
+        RETURN
+        RIGHT
+        RMENU
+        RSHIFT
+        RWIN
+        S
+        SCROLL
+        SEMICOLON
+        SLASH
+        SLEEP
+        SPACE
+        STOP
+        SUBTRACT
+        SYSRQ
+        T
+        TAB
+        U
+        UNDERLINE
+        UNLABELED
+        UP
+        V
+        VOLUMEDOWN
+        VOLUMEUP
+        W
+        WAKE
+        WEBBACK
+        WEBFAVORITES
+        WEBFORWARD
+        WEBHOME
+        WEBREFRESH
+        WEBSEARCH
+        WEBSTOP
+        X
+        Y
+        YEN
+        Z
+```
